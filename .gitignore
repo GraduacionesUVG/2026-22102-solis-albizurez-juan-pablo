@@ -1,0 +1,32 @@
+# Variables de entorno y credenciales
+.env
+*.env
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+venv/
+.venv/
+env/
+
+# Dependencias y builds
+node_modules/
+build/
+dist/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporales y logs
+*.log
+*.tmp

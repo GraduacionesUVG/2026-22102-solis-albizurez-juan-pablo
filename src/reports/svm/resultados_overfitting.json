@@ -1,0 +1,197 @@
+{
+  "variante": "completa",
+  "kernels_evaluados": [
+    "linear",
+    "rbf"
+  ],
+  "kernel_seleccionado": "rbf",
+  "hiperparametros": {
+    "C": 1,
+    "class_weight": null,
+    "gamma": 1.0
+  },
+  "seleccion_kernel": [
+    {
+      "kernel": "rbf",
+      "params": {
+        "C": 1,
+        "class_weight": null,
+        "gamma": 1.0
+      },
+      "pr_auc_cv": 0.9832088899558218,
+      "pr_auc_val": 0.9944907292214147,
+      "roc_auc_val": 0.9996984413619909
+    },
+    {
+      "kernel": "linear",
+      "params": {
+        "C": 0.1,
+        "class_weight": null
+      },
+      "pr_auc_cv": 0.9199390991259023,
+      "pr_auc_val": 0.9685497434580677,
+      "roc_auc_val": 0.9991976031481756
+    }
+  ],
+  "n_busqueda": 50000,
+  "n_final": 310529,
+  "n_pliegues": 3,
+  "validacion_cruzada": "pliegues temporales por bloque (PredefinedSplit)",
+  "tiempo_busqueda_s": {
+    "linear": 12.39760136604309,
+    "rbf": 390.3905861377716
+  },
+  "tiempo_entrenamiento_final_s": 3264.121287584305,
+  "vectores_soporte": 16984,
+  "criterio_umbral": {
+    "beta": 2,
+    "recall_minimo": 0.75
+  },
+  "umbral": -0.9818722186266435,
+  "metricas_validacion": {
+    "accuracy": 0.9993387535504425,
+    "precision": 0.9786680541103018,
+    "recall": 0.9984076433121019,
+    "f1": 0.9884393063583815,
+    "f2": 0.9943962782829351,
+    "tasa_falsos_positivos": 0.0006341154090044388,
+    "tp": 1881,
+    "fp": 41,
+    "fn": 3,
+    "tn": 64616,
+    "roc_auc": 0.9997995218735009,
+    "pr_auc": 0.9928704019823896
+  },
+  "metricas_prueba": {
+    "accuracy": 0.9984671796104833,
+    "precision": 0.9535080304311073,
+    "recall": 0.96,
+    "f1": 0.9567430025445293,
+    "f2": 0.958694543600204,
+    "tasa_falsos_positivos": 0.000841377411311172,
+    "tp": 1128,
+    "fp": 55,
+    "fn": 47,
+    "tn": 65314,
+    "roc_auc": 0.9992549139207438,
+    "pr_auc": 0.9771508005289444
+  },
+  "metricas_prueba_umbral_0": {
+    "accuracy": 0.9952061793700409,
+    "precision": 0.9863636363636363,
+    "recall": 0.7387234042553191,
+    "f1": 0.8447688564476885,
+    "f2": 0.7777777777777778,
+    "tasa_falsos_positivos": 0.00018357325337698297,
+    "tp": 868,
+    "fp": 12,
+    "fn": 307,
+    "tn": 65357,
+    "roc_auc": 0.9992549139207438,
+    "pr_auc": 0.9771508005289444
+  },
+  "metricas_prueba_no_vistos": {
+    "accuracy": 0.9982535741802928,
+    "precision": 0.9521739130434783,
+    "recall": 0.9588441330998249,
+    "f1": 0.9554973821989529,
+    "f2": 0.9575026232948584,
+    "tasa_falsos_positivos": 0.0009604805895604492,
+    "tp": 1095,
+    "fp": 55,
+    "fn": 47,
+    "tn": 57208,
+    "roc_auc": 0.9992271503105177,
+    "pr_auc": 0.9756593893412275
+  },
+  "ic95_prueba": {
+    "recall": [
+      0.9472144697457787,
+      0.9697874412828107
+    ],
+    "precision": [
+      0.9399717640082671,
+      0.964108443493728
+    ]
+  },
+  "recall_por_ataque": [
+    {
+      "ataque": "DoS Slowhttptest",
+      "flujos": 260,
+      "detectados": 255,
+      "recall": 0.9807692307692307,
+      "ic95_inf": 0.9557796181323439,
+      "ic95_sup": 0.9917586017692939
+    },
+    {
+      "ataque": "DoS slowloris",
+      "flujos": 915,
+      "detectados": 873,
+      "recall": 0.9540983606557377,
+      "ic95_inf": 0.9385357591345472,
+      "ic95_sup": 0.9658638675258043
+    }
+  ],
+  "desempeno_por_bloque": [
+    {
+      "bloque": 1,
+      "flujos": 8007,
+      "ataques": 0,
+      "recall": NaN,
+      "falsos_positivos": 4,
+      "tasa_falsos_positivos": 0.0004995628824778319
+    },
+    {
+      "bloque": 2,
+      "flujos": 4555,
+      "ataques": 915,
+      "recall": 0.9540983606557377,
+      "falsos_positivos": 0,
+      "tasa_falsos_positivos": 0.0
+    },
+    {
+      "bloque": 3,
+      "flujos": 536,
+      "ataques": 0,
+      "recall": NaN,
+      "falsos_positivos": 0,
+      "tasa_falsos_positivos": 0.0
+    },
+    {
+      "bloque": 4,
+      "flujos": 4981,
+      "ataques": 260,
+      "recall": 0.9807692307692307,
+      "falsos_positivos": 5,
+      "tasa_falsos_positivos": 0.0010590976488032196
+    },
+    {
+      "bloque": 5,
+      "flujos": 48465,
+      "ataques": 0,
+      "recall": NaN,
+      "falsos_positivos": 46,
+      "tasa_falsos_positivos": 0.0009491385535953781
+    }
+  ],
+  "linea_base": {
+    "feature": "Flow Duration",
+    "signo": 1.0,
+    "umbral": 2999846.0,
+    "metricas_prueba": {
+      "accuracy": 0.7821441452272181,
+      "precision": 0.05617004264392324,
+      "recall": 0.7174468085106382,
+      "f1": 0.10418340233578446,
+      "f2": 0.21387253907042825,
+      "tasa_falsos_positivos": 0.21669292784041366,
+      "tp": 843,
+      "fp": 14165,
+      "fn": 332,
+      "tn": 51204,
+      "roc_auc": 0.6986472604133067,
+      "pr_auc": 0.03924495566777894
+    }
+  },
+  "random_state": 42
+}

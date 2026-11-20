@@ -1,0 +1,80 @@
+# ============================================
+# Datos (NUNCA subir el dataset a GitHub, pesa GBs)
+# ============================================
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+*.csv
+*.parquet
+*.pkl
+*.npy
+*.npz
+*.h5
+*.hdf5
+
+# ============================================
+# Modelos entrenados (pueden pesar mucho)
+# ============================================
+*.joblib
+*.model
+!.gitkeep
+
+# ============================================
+# Excepción: modelo y datos de prueba de la demo en vivo
+# ============================================
+!demo_en_vivo/models/svm_final.joblib
+!demo_en_vivo/data/X_test.csv
+!demo_en_vivo/data/y_test.csv
+
+# ============================================
+# Python
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.Python
+build/
+dist/
+.pytest_cache/
+
+# ============================================
+# Entornos virtuales
+# ============================================
+venv/
+env/
+.venv/
+ENV/
+
+# ============================================
+# Jupyter / Colab
+# ============================================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ============================================
+# Variables de entorno / credenciales
+# ============================================
+.env
+*.env
+kaggle.json
+
+# ============================================
+# Sistema operativo
+# ============================================
+.DS_Store
+Thumbs.db
+
+# ============================================
+# Editores
+# ============================================
+.vscode/
+.idea/
+*.swp
+
+# ============================================
+# Streamlit
+# ============================================
+.streamlit/secrets.toml
