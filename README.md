@@ -18,8 +18,8 @@ manteniendo conexiones abiertas con muy poco tráfico. Por eso son difíciles de
 tráfico legítimo. Este proyecto diseña y evalúa un clasificador **SVM (Support Vector Machine)**
 que detecta estos ataques a nivel de flujo de red, usando el conjunto de datos CIC-IDS2017.
 
-Es el módulo SVM de un proyecto de graduación más amplio. Su desempeño se contrasta con el de los
-módulos hermanos, XGBoost y GRU, sobre el mismo subconjunto de prueba.
+Su desempeño se contrasta con el de los
+módulos , XGBoost y GRU, sobre el mismo subconjunto de prueba.
 
 | Módulo | Autor |
 |---|---|
