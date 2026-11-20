@@ -1,0 +1,6 @@
+__pycache__/
+# La demo necesita sus modelos entrenados y datos de prueba,
+# aunque el .gitignore de src/ los excluye en el resto del proyecto.
+!*.csv
+!*.joblib
+!*.keras
