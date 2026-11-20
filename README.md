@@ -164,7 +164,7 @@ Las capturas del sistema en funcionamiento están en [`capturas/`](capturas/), e
 
 | # | Contenido |
 |---|---|
-| [01](capturas/captura-01.png) | Limpieza: filtrado de clases BENIGN + ataques lentos |
+| [01](capturas/captura-01.png) | Limpieza: carga de datos crudos y filtrado de clases BENIGN + ataques lentos |
 | [02](capturas/captura-02.png) | Limpieza: resumen del conjunto procesado |
 | [03](capturas/captura-03.png) | Análisis exploratorio: distribución de clases |
 | [04](capturas/captura-04.png) | Análisis exploratorio: distribución temporal de los flujos |
@@ -173,11 +173,12 @@ Las capturas del sistema en funcionamiento están en [`capturas/`](capturas/), e
 | [07](capturas/captura-07.png) | Evaluación de las características derivadas candidatas |
 | [08](capturas/captura-08.png) | Matrices finales: 42 características y particiones |
 | [09](capturas/captura-09.png) | Búsqueda de hiperparámetros y regla de un error estándar |
-| [10](capturas/captura-10.png) | Evaluación en prueba: matriz de confusión, curvas ROC y PR |
-| [11](capturas/captura-11.png) | Resumen de métricas en prueba con intervalos de confianza |
-| [12](capturas/captura-12.png) | Ejecución de las pruebas unitarias con pytest |
-| [13](capturas/captura-13.png) | Demo en vivo: métricas y matriz de confusión del SVM |
-| [14](capturas/captura-14.png) | Demo en vivo: curvas ROC y PR, y predicciones individuales |
+| [10](capturas/captura-10.png) | Evaluación en prueba: métricas frente a umbral 0 y línea base |
+| [11](capturas/captura-11.png) | Evaluación en prueba: matriz de confusión, curvas ROC y PR |
+| [12](capturas/captura-12.png) | Resumen de métricas en prueba con intervalos de confianza |
+| [13](capturas/captura-13.png) | Ejecución de las pruebas unitarias con pytest |
+| [14](capturas/captura-14.png) | Demo en vivo: pantalla inicial y configuración |
+| [15](capturas/captura-15.png) | Demo en vivo: métricas y matriz de confusión del SVM |
 
 ## Demo
 
@@ -194,7 +195,7 @@ Video demostrativo: [`demo/demo.mp4`](demo/demo.mp4)
 
 ```
 2026-22102-solis-albizurez-juan-pablo/
-├── capturas/              # Capturas del sistema (captura-01 … captura-14)
+├── capturas/              # Capturas del sistema (captura-01 … captura-15)
 ├── demo/
 │   └── demo.mp4           # Video demostrativo
 ├── docs/
